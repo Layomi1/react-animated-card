@@ -1,5 +1,6 @@
 {
   "name": "framer-motion-demo",
+  "homepage": "https://Layomi1.github.io/react-animated-card.git",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,9 +8,12 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "motion": "^12.9.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
